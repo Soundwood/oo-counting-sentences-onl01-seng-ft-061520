@@ -16,8 +16,14 @@ class String
 
   def count_sentences
     count = 0 
-    count += self.split(".").count
-    count += self.split("!").count
-    count += self.split("?").count
+    if self.split(".").count == 1 
+      count += self.split(".").count
+    end 
+    if self.split("!").count == 1 
+      count += self.split("!").count
+    end 
+    if self.split("?").count == 1 
+      count += self.split("?").count
+    end 
   end
 end
