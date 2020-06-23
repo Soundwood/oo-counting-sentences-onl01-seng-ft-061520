@@ -24,6 +24,7 @@ class String
     end 
     if self.split("?").count == 1 
       count += self.split("?").count
-    end 
+    end
+    return count 
   end
 end
